@@ -8,4 +8,12 @@ class ApplicationController < ActionController::Base
     @current_user ||= User.find_by(id: session[:user_id])
   end
 
+  # def logged_in?
+  #   current_user.id != nil 
+  # end
+
+  # def require_logged_in
+  #   redirect_to signup_path unless loggedin?
+  # end
+
 end
